@@ -1,68 +1,18 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
  }
 body {
-    background-image: url(homeimage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity:1;
     width: 100%;
-    overflow: hidden;
-    margin: 0px;
-}
-
-.navbar {
-    margin: 0 0px;
-    display: flex;
-    background-color:;
-    height:63px;
-    position: relative;
-    width:100%;
-}
-.navbar ul {
-    display: flex;
-    justify-content: flex-end;
-    padding:20px;
-    list-style-type: none;
-    margin-top: 0%;
-    width:100%;
-}
-.navbar .image {
-    flex-basis: content;
-    display: flex;
-}
-.image img {
-    width: 50px;
-    height: 50px;
-    margin-top: 7px;
-    margin-left: 19px;
-}
-.image h1 {
-    display :flex;
-    position: absolute;
-    margin-left: 79px;
-    margin-top:9px;
-    color: white;
-}
-.image h1 span {
-    margin-left: 4px;
-}
-.navbar ul li a{
-     padding: 20px;
-     text-decoration: none;
-     color:white;
-}
-.navbar ul li a.active {
-    background-color: teal;
-    padding: 10px 15px;
-    border-radius: 6px;
+    height:100vh;
+    overflow: hidden; 
 }
 
 .main {
     display: inline-block;   
     position: absolute;
     margin-left: 35%;
-    top: 30%;
+    top: 25%;
     border: 2px solid grey;
     border-radius: 6px;
     padding: 20px;
@@ -76,13 +26,13 @@ body {
     padding: 10px;
     font-size: 18px;
 }
-#myform > h3 {
-    color: white;
+ h3 {
+    color: #1fa51f;
     font-weight: lighter;
     text-align: center;
 }
 #myform > h1 {
-    color: white;
+    color: #808080;
     font-weight: lighter;
     text-align: center;
     border-bottom: 1px solid grey;
@@ -96,28 +46,28 @@ body {
 }
 #myform p a.resetpword {
     cursor:pointer;
-    color:#f04e69;
+    color: #808080;
     transition: .5s ease;
 }
 #myform p {
     text-align: center;
 }
 #myform p a.resetpword:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #f02525;
 }
 #login {
-    color: grey;
+    color: #19e45d;
     margin-top: 20px;
     border-radius: 6px;
     width: 350px;
     padding: 10px;
     font-size: 18px;
-    border-color: cyan;
+    border:2px solid #1aadad;
 }
 #login:hover {
-    background-color: #19e4e4;
+    background-color: #19e45d;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 #signup {
     border-radius: 6px;
@@ -125,6 +75,7 @@ body {
     padding: 10px;
     font-size: 18px;
     color: #f04e69;
+    border: 2px solid;
 }
 #signup:hover {
     background-color:#f04e69;
@@ -133,20 +84,19 @@ body {
 .credit-logo {
     display: flex;
     justify-content: center;
+    align-content: flex-end;
 }
 .logo-name {
     text-align: center;
     margin-top: 0px;
     color: darkorange;
 }
-.navbar {
-    display: ;
-}
+
 form input:focus {
-    border: 3px solid teal;
+    border: 2px solid teal;
     outline: none;
 }
 form input:valid {
     transition:1s ease;
-    border: 4px solid #f04e69;
+    border: 4px solid #90ee90;
 }

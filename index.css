@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
  }
 body {
     background-image: url(homeimage.jpg);
@@ -42,7 +43,7 @@ body {
     position: absolute;
     margin-left: 79px;
     margin-top:9px;
-    color: white;
+    color: darkorange;
 }
 .image h1 span {
     margin-left: 4px;
@@ -56,79 +57,4 @@ body {
     background-color: teal;
     padding: 10px 15px;
     border-radius: 6px;
-}
-/* styling the main*/
-.main {
-    display: inline-block;   
-    position: absolute;
-    margin-left: 35%;
-    top: 30%;
-    border: 2px solid grey;
-    border-radius: 6px;
-    padding: 20px;
-}
-#myform {
-    padding: 10px;
-}
-#email {
-    border-radius: 6px;
-    width: 350px;
-    padding: 10px;
-    font-size: 18px;
-}
-#myform > h3 {
-    color: white;
-    font-weight: lighter;
-    text-align: center;
-}
-#myform > h1 {
-    color: white;
-    font-weight: lighter;
-    text-align: center;
-    border-bottom: 1px solid grey;
-    font-size: 30px;
-}
-#Password {
-    border-radius: 6px;
-    width: 350px;
-    padding: 10px;
-    font-size: 18px;
-}
-#myform p {
-    text-align: right;
-    color:#f04e69;
-}
-#login {
-    color: grey;
-    margin-top: 20px;
-    border-radius: 6px;
-    width: 350px;
-    padding: 10px;
-    font-size: 18px;
-    border-color: cyan;
-}
-#login:hover {
-    background-color: #19e4e4;
-    color: white;
-    font-size: 20px;
-}
-#signup {
-    border-radius: 6px;
-    width: 350px;
-    padding: 10px;
-    font-size: 18px;
-    color: #f04e69;
-}
-#signup:hover {
-    background-color:#f04e69;
-    color: white;
-}
-.credit-logo {
-    display: flex;
-    justify-content: center;
-}
-.logo-name {
-    text-align: center;
-    margin-top: 0px;
-    color: darkorange;
 }
