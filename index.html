@@ -2,8 +2,10 @@
 <html>
     <title>HOME|Quick Credit Loan App</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.css">
   <body>   
     <!--top nav-->
+    <div class="bg-img">
         <div class="navbar">
             <div class="image">
                 <img  class="image" src="projectimage1.png" width="50px">
@@ -12,23 +14,55 @@
             <ul>
                 <li><a class="active" href="index.html">HOME</a></li>
                 <li><a href="about">ABOUT</a></li>
-                <li><a href="apply">APPLY</a></li>
-                <li><a href="loan">LOAN</a></li>
+               
                 <li><a href="signup.html">SIGN UP</a></li>
                 <li><a id="disappear" href="login.html">LOGIN</a></li>
-                <a id="getform" href="signup.html" onclick="openSlideMenu()">
-                    <svg width="30" height="30">
-                        <path d="M0, 5, 30, 5" stroke="#fff"
-                        stroke-width="5" />
-    
-                        <path d="M0, 14, 30, 14" stroke="darkorange"
-                        stroke-width="5" />
-                        <path d="M0, 23, 30, 23" stroke="#fff"
-                        stroke-width="5" />
-                    </svg>
-                </a>
+                <!--dropdown menu-->
+                <div class="dropdown">
+                  <li><a>LOAN</a></li>
+                  <div class="dropdown-content">
+                      <a href="#">Link</a>
+                      <a href="#">Link</a>
+                      <a href="#">Link</a>
+                  </div>
+               </div>
+               <li><a href="apply">APPLY</a></li> 
             </ul>
-        </div> 
+        </div>
+    </div> 
+
+     <!--main--> 
+        
+     <button class="open-button" onclick="openForm()">Open Form</button> 
+     <div class="main">
+       <form id="myform">
+         <div class="credit-logo">
+           <img  class="login-logo" src="projectimage1.png" width="100px";>
+       </div>
+       <h1 class="logo-name">Quick Credit Login</h1>
+          <!-- <h1>Login</h1>-->
+           <input type="email" id="email" name="email" placeholder="Enter your email...." required><br><br>               
+           <p><a class="resetpword">Forgot Password?</a></p>  
+           <input type="Password" id="Password" name="Password" placeholder="Enter password...." required><br><br>
+           <input type="submit" value="Login" id="login"><br>
+           <h3>Don't have an Account?</h3> 
+           <a class="signup" href="signup.html">
+             Create an Account
+           </a>
+         <br><br>
+         <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+      </form>         
+   </div> 
+
+     <script>
+       function openForm() {
+         document.getElementById("myform").style.display = "block";
+       }
+       
+       function closeForm() {
+         document.getElementById("myform").style.display = "none";
+       }
+       </script>
         
   </body>  
 </html>
