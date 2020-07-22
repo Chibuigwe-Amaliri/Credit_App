@@ -63,16 +63,20 @@ form {
 .main2 {
   text-align: center;
 }
-#login {
-    width: 370px;
-    color: #f83f5e; 
+.loginquickcredit {
+    width: 370px;  
     border:2px solid #f83f5e;
     padding: 5px;
     font-size: 18px;
+    
 }
-#login:hover {
-    color: white;
+.loginquickcredit a {
+    text-decoration: none;
+    
+}
+#myform .loginquickcredit:hover { 
     background-color: #f83f5e;
+    color: white;
 }
 .main2 {
     text-align: center;
