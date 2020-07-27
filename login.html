@@ -11,32 +11,35 @@
         
        <button class="open-button" onclick="openForm()">Get It</button> 
         <div class="main">
-          <form id="myform">
-            <div class="credit-logo">
+          <form id="myform">           
+              <!-- <a href="#" class="btn-cancel" onclick="closeForm()">&times;</a> -->
+           <div class="credit-logo">
               <img  class="login-logo" src="projectimage1.png" width="100px";>
-          </div>
-          <h1 class="logo-name">Quick Credit Login</h1>
+            </div>
+
+            <h1 class="logo-name">Quick Credit Login</h1>
              <!-- <h1>Login</h1>-->
-              <input type="email" id="email" name="email" placeholder="Enter your email...." required><br><br>               
-              <p><a class="resetpword">Forgot Password?</a></p>  
-              <input type="Password" id="Password" name="Password" placeholder="Enter password...." required><br><br>
-              <input type="submit" value="Login" id="login"><br>
-              <h3>Don't have an Account?</h3> 
-              <a class="signup" href="signup.html">
-                Create an Account
-              </a>
+            <input type="email" id="email" name="email" placeholder="Enter your email...." required><br><br> <br>              
+             
+            <input type="Password" id="Password" name="Password" placeholder="Enter password...." required>
+              <p><a class="resetpword">Forgot Password?</a></p> 
+            <input type="submit" value="Login" id="login"><br><br><br>
+            
+            <a class="signup" href="signup.html">
+              Create an Account
+            </a>
             <br><br>
-            <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+           <!-- <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>-->
          </form>         
       </div> 
 
         <script>
           function openForm() {
-            document.getElementById("myform").style.display = "block";
+            //document.getElementById("myform").style.display = "block";
           }
           
           function closeForm() {
-            document.getElementById("myform").style.display = "none";
+           // document.getElementById("myform").style.display = "none";
           }
           </script>
   </body> 

@@ -49,11 +49,14 @@
      text-decoration: none;
      color:white;
 }
-.dropdown li a:hover {
-    background-color: red;
+.navbar ul li a:hover {
+    background-color:#73a7a7;
+    border-radius: 6px;
 }
+
 .navbar ul li a.active {
-    background-color: red;
+    background-color: #73a7a7;
+    border-radius: 6px;
   
 }
 /*drop down content*/
@@ -66,16 +69,24 @@
   }
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  white-space: nowrap;
 }
-.dropdown-content a:hover {
-    background-color: #dae2e2;
-}
+
 .dropdown:hover .dropdown-content{
     display:block;
 }
-
+/*matching the dropdown color with the content on hover*/
+.dropdown:hover  a {
+    background-color: #73a7a7;   
+}
+/*changing background color for dropdown-conten*/
+ .dropdown a:hover {
+    background: white;
+    color:gray;
+}
+/*media queries.
